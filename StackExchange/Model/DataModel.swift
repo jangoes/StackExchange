@@ -43,7 +43,3 @@ extension User: Decodable {
         case profileImageURL = "profile_image"
     }
 }
-
-struct Wrapper<T: Decodable>: Decodable {
-    let items: [T]
-}

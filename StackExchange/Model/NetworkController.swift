@@ -7,10 +7,6 @@
 
 import UIKit
 
-struct Resource<T> {
-    let url: URL
-}
-
 protocol NetworkRequest: AnyObject {
     associatedtype ModelType
     func decode(_ data: Data) -> ModelType?

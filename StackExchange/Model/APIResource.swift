@@ -31,6 +31,10 @@ extension APIResource {
     }
 }
 
+struct Wrapper<T: Decodable>: Decodable {
+    let items: [T]
+}
+
 // MARK: - Question Resource
 struct QuestionsResource: APIResource {
     typealias ModelType = Question
